@@ -27,14 +27,21 @@
 						<li><a href="#one" class="active">About</a></li>
 						<li><a href="#two">Things I Can Do</a></li>
 						<li><a href="#three">A Few Accomplishments</a></li>
-						<!-- <li><a href="#four">Contact</a></li> -->
+						 <li><a href="#four">Contact</a></li>
 					</ul>
 				</nav>
 				<footer>
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/cowboy-computing/" class="icon brands fa-linkedin"><span class="label">Linked In</span></a></li>
 						<li><a href="https://github.com/Cubanpete24?tab=repositories" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li title="click to copy email address" onclick="copyText()"><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<script>
+							function copyText() {
+						
+								navigator.clipboard.writeText
+									("cowboycomputing24@gmail.com");
+							}
+						</script>
 					</ul>
 				</footer>
 			</section>
@@ -115,12 +122,13 @@
 								</div>
 							</section>
 
-						<!-- Four 
+						 Four 
 							<section id="four">
 								<div class="container">
 									<h3>Contact Me</h3>
 									<p>Want to get me on the horn? Shoot me an email!</p>
-									<form method="post" action="#">
+									<form action="https://api.web3forms.com/submit" method="POST" id="form">
+										<input type="hidden" name="access_key" value="dfe811da-f836-4fe9-9bb8-3d62812f93ac" />
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -136,7 +144,7 @@
 									</form>
 								</div>
 							</section>
-						-->
+						
 
 						<!-- Five -->
 						<!--
